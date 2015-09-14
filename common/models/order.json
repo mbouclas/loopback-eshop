@@ -1,0 +1,43 @@
+{
+  "name": "Order",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "mysql": {
+      "table": "eshop_orders"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true
+    },
+    "email": {
+      "type": "string"
+    },
+    "status": {
+      "type": "number"
+    },
+    "amount": {
+      "type": "number",
+      "dataType": "float"
+    },
+    "shipping_method": {
+      "type": "number"
+    },
+    "payment_method": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "shippingMethods": {
+      "type": "belongsTo",
+      "model": "shippingMethod",
+      "foreignKey": "shipping_method"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

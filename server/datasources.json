@@ -1,0 +1,26 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongodb": {
+    "host": "loft7930.serverloft.eu",
+    "port": 27017,
+    "url": "",
+    "database": "mymailis",
+    "password": "magicj1978!",
+    "name": "mongodb",
+    "connector": "mongodb",
+    "user": "mymailis"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port": 3306,
+    "database": "eastpak",
+    "password": "magicj",
+    "name": "mysql",
+    "debug": false,
+    "connector": "mysql",
+    "user": "root"
+  }
+}

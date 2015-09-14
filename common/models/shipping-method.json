@@ -1,0 +1,32 @@
+{
+  "name": "shippingMethod",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true,
+    "mysql": {
+      "table": "eshop_shipping"
+    }
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "shipping": {
+      "type": "string",
+      "required": true
+    },
+    "base_cost": {
+      "type": "number",
+      "required": true
+    },
+    "orderby": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
